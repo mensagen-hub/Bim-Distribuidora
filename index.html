@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#ffffff">
   <title>Mensagem</title>
 
   <style>
@@ -22,12 +23,6 @@
       justify-content: center;
     }
 
-    a {
-      display: block;
-      width: 100%;
-      text-decoration: none;
-    }
-
     img {
       display: block;
       width: 100%;
@@ -41,17 +36,15 @@
 
 <body>
 
-  <a
-    href="https://wa.me/5511996262269?text=Muito%20obrigado%20por%20fazer%20parte%20da%20nossa%20a%C3%A7%C3%A3o!"
-    target="_blank"
-    rel="noopener noreferrer"
-    aria-label="Abrir WhatsApp"
+  <img
+    id="imagemMensagem"
+    alt="Mensagem da ação"
   >
-    <img
-      src="imagem1.jpg"
-      alt="Mensagem da ação"
-    >
-  </a>
+
+  <script>
+    document.getElementById("imagemMensagem").src =
+      "imagem1.jpg?v=" + Date.now();
+  </script>
 
 </body>
 </html>
