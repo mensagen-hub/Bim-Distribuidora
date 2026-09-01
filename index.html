@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#ffffff">
   <title>Mensagem</title>
 
   <style>
@@ -48,10 +49,15 @@
     aria-label="Abrir formulário"
   >
     <img
-      src="imagem1.jpg"
+      id="imagemMensagem"
       alt="Mensagem da ação"
     >
   </a>
+
+  <script>
+    document.getElementById("imagemMensagem").src =
+      "imagem1.jpg?v=" + Date.now();
+  </script>
 
 </body>
 </html>
